@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                     if (result == TextToSpeech.LANG_MISSING_DATA ||
                             result == TextToSpeech.LANG_NOT_SUPPORTED) {
                         Toast.makeText(getApplicationContext(), "This language is not supported!",
-                                Toast.LENGTH_SHORT);
+                                Toast.LENGTH_SHORT).show();
                     } else {
                         toSpeech.setPitch(0.6f);
                         toSpeech.setSpeechRate(1.0f);
